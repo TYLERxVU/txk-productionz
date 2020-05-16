@@ -1,28 +1,72 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav" class="p-0">
+      <navbar class="fixed-top"></navbar>
+      <transition name="custom-classes-transition" enter-active-class="animate__animated animate__fadeIn">
+      <router-view></router-view>
+      </transition>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import navbar from "./components/NavBar";
+
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    navbar,
+    
   }
+
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Mangal, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+.view {
+  margin-top: 7rem;
+}
+
+.res-width {
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .res-width {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .res-width {
+    width: 60%;
+  }
+}
+
+
+
+
 </style>
