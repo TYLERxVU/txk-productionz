@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white p-0">
     <nav class="navbar navbar-expand-lg navbar-light p-0 py-3 my-3 res-width">
-        <router-link class="navbar-brand text-dark" to="gallery">TXK Productionz</router-link>
+        <router-link class="navbar-brand text-dark" to="/">TXK Productionz</router-link>
       
         <button class="navbar-toggler test" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <!-- <a class="nav-link" href="gallery">Gallery</a> -->
-              <router-link class="nav-link text-dark test" to="gallery">Gallery</router-link>
+              <router-link class="nav-link text-dark test" to="/">Gallery</router-link>
             </li>
             <li class="nav-item">
               <!-- <a class="nav-link" href="about" >About</a> -->

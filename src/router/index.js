@@ -5,11 +5,7 @@ Vue.use(VueRouter)
 
   const routes = [
   {
-    path:'/',
-    redirect: '/gallery'
-  },
-  {
-    path: '/gallery',
+    path: '/',
     name: 'Gallery',
     component: () => import(/* webpackChunkName: "about" */ '../views/Gallery.vue')
   },
