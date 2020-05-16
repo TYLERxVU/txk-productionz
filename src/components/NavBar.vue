@@ -15,11 +15,14 @@
             </li>
             <li class="nav-item">
               <!-- <a class="nav-link" href="about" >About</a> -->
-              <router-link class="nav-link text-dark test" to="about">About</router-link>
+              <router-link class="nav-link text-dark test" to="about">About Us</router-link>
             </li>
             <li class="nav-item">
               <!-- <a class="nav-link" href="contact">Contact</a> -->
               <router-link class="nav-link text-dark" to="contact">Contact</router-link>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://www.instagram.com/txk.productionz/">Instagram</a>
             </li>
           </ul>
         </div>
